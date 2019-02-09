@@ -10,6 +10,8 @@ public interface Api {
     @GET("top-headlines?apiKey={api_key}")
     Call<NewsApiResponse> getNews (
             @Query("country") String country,
-            @Query("apiKey") String api_key
+            @Query("apiKey") String api_key,
+            @Query("page") int page,
+            @Query("pagesize") int size
     );
 }

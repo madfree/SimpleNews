@@ -4,7 +4,7 @@ import java.util.List;
 
 public class NewsApiResponse {
     String status;
-    int totalRestults;
+    int totalResults;
     List<Article> articles;
 }
 
