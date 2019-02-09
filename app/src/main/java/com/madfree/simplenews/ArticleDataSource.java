@@ -20,7 +20,7 @@ public class ArticleDataSource extends PageKeyedDataSource<Integer, Article> {
 
         RetrofitClient.getsInstance()
                 .getApi()
-                .getNews(COUNTRY, API_KEY, PAGE_SIZE, FIRST_PAGE)
+                .getNews(COUNTRY, API_KEY, FIRST_PAGE, PAGE_SIZE)
                 .enqueue(new Callback<NewsApiResponse>() {
                     @Override
                     public void onResponse(Call<NewsApiResponse> call, Response<NewsApiResponse> response) {
